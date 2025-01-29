@@ -46,7 +46,6 @@ class FeedController extends ActionController
     }
 
     /**
-     * @return string
      * @throws \Exception
      */
     public function showAction()
