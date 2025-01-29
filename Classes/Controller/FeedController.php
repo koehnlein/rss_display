@@ -48,7 +48,7 @@ class FeedController extends ActionController
     /**
      * @throws \Exception
      */
-    public function showAction()
+    public function showAction(): ResponseInterface
     {
 
         // @todo !! better add check if the Feed URL is alive. If not log it and send an email to the webmaster.
