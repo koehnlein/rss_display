@@ -11,36 +11,30 @@
 				<type>array</type>
 				<el>
 					<settings.feedUrl>
-						<TCEforms>
-							<label>LLL:EXT:rss_display/Resources/Private/Language/locallang.xlf:tt_content.tx_rssdisplay_feedUrl</label>
-							<config>
-								<type>input</type>
-								<size>50</size>
-								<max>400</max>
-								<default>http://www.w3.org/blog/news/feed/atom</default>
-							</config>
-						</TCEforms>
+						<label>LLL:EXT:rss_display/Resources/Private/Language/locallang.xlf:tt_content.tx_rssdisplay_feedUrl</label>
+						<config>
+							<type>input</type>
+							<size>50</size>
+							<max>400</max>
+							<default>http://www.w3.org/blog/news/feed/atom</default>
+						</config>
 					</settings.feedUrl>
 					<settings.numberOfItems>
-						<TCEforms>
-							<label>LLL:EXT:rss_display/Resources/Private/Language/locallang.xlf:tt_content.tx_rssdisplay_numberOfItems</label>
-							<config>
-								<type>input</type>
-								<size>30</size>
-								<eval>int</eval>
-								<default>10</default>
-							</config>
-						</TCEforms>
+						<label>LLL:EXT:rss_display/Resources/Private/Language/locallang.xlf:tt_content.tx_rssdisplay_numberOfItems</label>
+						<config>
+							<type>input</type>
+							<size>30</size>
+							<eval>int</eval>
+							<default>10</default>
+						</config>
 					</settings.numberOfItems>
 					<settings.template>
-						<TCEforms>
-							<label>LLL:EXT:rss_display/Resources/Private/Language/locallang.xlf:tt_content.tx_rssdisplay_template</label>
-							<config>
-								<type>select</type>
-								<itemsProcFunc>Fab\RssDisplay\Backend\FlexformHelper->populateTemplatesList</itemsProcFunc>
-								<renderType>selectSingle</renderType>
-							</config>
-						</TCEforms>
+						<label>LLL:EXT:rss_display/Resources/Private/Language/locallang.xlf:tt_content.tx_rssdisplay_template</label>
+						<config>
+							<type>select</type>
+							<itemsProcFunc>Fab\RssDisplay\Backend\FlexformHelper->populateTemplatesList</itemsProcFunc>
+							<renderType>selectSingle</renderType>
+						</config>
 					</settings.template>
 					<!-- @todo add conditional configuration tx_rssdisplay_descriptionlength -->
 				</el>
