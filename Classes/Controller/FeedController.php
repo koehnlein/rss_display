@@ -32,7 +32,7 @@ class FeedController extends ActionController
      * Initialize object
      * @throws \RuntimeException
      */
-    public function initializeAction()
+    public function initializeAction(): void
     {
         if (empty($this->settings['template'])) {
             $this->settings['template'] = 'EXT:rss_display/Resources/Private/Templates/Feed/Show.html';
