@@ -1,6 +1,5 @@
 <?php
 if (!defined('TYPO3')) die ('Access denied.');
-$typo3Version = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
 
 
 // Possible Static TS loading
@@ -9,10 +8,6 @@ $configuration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS
 
 if (true === isset($configuration['autoload_typoscript']['value']) && true === (bool)$configuration['autoload_typoscript']['value']) {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('rss_display', 'Configuration/TypoScript', 'RSS Display: display a RSS / Atom feed');
-}
-
-if ($typo3Version->getMajorVersion() < 12) {
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms']['db_new_content_el']['wizardItemsHook'][\Fab\RssDisplay\Backend\Wizard::class] = \Fab\RssDisplay\Backend\Wizard::class;
 }
 
 
