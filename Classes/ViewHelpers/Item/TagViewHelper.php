@@ -17,7 +17,7 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 class TagViewHelper extends AbstractViewHelper
 {
 
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         parent::initializeArguments();
         $this->registerArgument('namespace', 'string', 'RSS element namespace', true);

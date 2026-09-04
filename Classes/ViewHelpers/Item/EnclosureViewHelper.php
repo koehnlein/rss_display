@@ -16,7 +16,7 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 class EnclosureViewHelper extends AbstractViewHelper
 {
 
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         $this->registerArgument('attribute', 'string', 'The attribute to be obtained', true, 'url');
         $this->registerArgument('key', 'int', 'The enclosure item key. Starts with 0.', false, 0);
