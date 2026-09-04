@@ -37,7 +37,6 @@ if (false === isset($configuration['autoload_typoscript']) || true === (bool)$co
     'Pi1',
     [FeedController::class => 'show'],
     $pluginType === 'USER_INT' ? [FeedController::class => 'show'] : [],
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_PLUGIN
 );
 
 // cache configuration, see
