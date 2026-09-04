@@ -21,13 +21,13 @@ if (false === isset($configuration['autoload_typoscript']) || true === (bool)$co
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript(
         'rss_display',
         'constants',
-        '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rss_display/Configuration/TypoScript/constants.txt">'
+        "@import 'EXT:rss_display/Configuration/TypoScript/constants.typoscript'"
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript(
         'rss_display',
         'setup',
-        '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rss_display/Configuration/TypoScript/setup.txt">'
+        "@import 'EXT:rss_display/Configuration/TypoScript/setup.typoscript'"
     );
 }
 
